@@ -8,10 +8,7 @@ namespace CSharp_basics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            MyString();
-
-            Console.ReadLine();
+            DataTypes();
         }
 
         static void MyString()
@@ -29,6 +26,29 @@ namespace CSharp_basics
             Console.WriteLine("This is my string. " + myString1);
             Console.WriteLine($"Here are two truths and a lie. {theTruth}, {theLie}");
             Console.WriteLine($"Here are two truths and a lie. {theTruth}, {theLie}");
+            
+        }
+        
+
+        static void DataTypes()
+        {
+            int myAge = 99;
+            string name = "Bob the builder";
+            bool awesome = true;
+            char grade = 'F';
+            float altitude = 90.265141f;
+            double bankBalance = -4000000;
+            decimal pi = 3.14159265359m;
+
+            ///output
+            ///
+            Console.WriteLine($"int = {myAge}.");
+            Console.WriteLine($"string = {name}.");
+            Console.WriteLine($"bool = {awesome}."); 
+            Console.WriteLine($"char = {grade}.");
+            Console.WriteLine($"float = {altitude}.");
+            Console.WriteLine($"double = {bankBalance}.");
+            Console.WriteLine($"decimal = {pi}.");
         }
     }
 }
